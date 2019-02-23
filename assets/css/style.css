@@ -1,0 +1,12 @@
+#todo-error{
+  color: red;
+  font-size: 2em;
+}
+
+.current-weather{
+  justify-self: end;
+  float: right;
+  align-items: flex-end;
+  background-color: rgb(43, 198, 226);
+  flex-wrap: wrap-reverse;
+}
