@@ -16,7 +16,7 @@ function _drawTodos() {
 
 function _drawError() {
 	console.error('[TODO ERROR]', _todoService.TodoError)
-	//document.querySelector('#todo-error').textContent = `${_todoService.TodoError.message}`
+	document.querySelector('#todo-error').textContent = `${_todoService.TodoError.message}`
 }
 
 
@@ -25,7 +25,7 @@ export default class TodoController {
 		_todoService.addSubscriber('error', _drawError)
 		_todoService.addSubscriber('todos', _drawTodos)
 		// Don't forget to add your subscriber!!!!!!!!!!!!!!
-		debugger
+
 		_todoService.getTodos()
 	}
 

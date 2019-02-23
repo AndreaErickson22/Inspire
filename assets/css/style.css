@@ -10,3 +10,33 @@
   background-color: rgb(43, 198, 226);
   flex-wrap: wrap-reverse;
 }
+.TO-DO{
+  background-color: rgba(22, 176, 223, 0.783);
+  border: 2px solid black;
+font-size: 12px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: inline-block;
+  vertical-align: middle;
+   justify-content: center; 
+  flex-direction: column;
+}
+.ToDo-List{
+  align-content: center;
+   display: inline-block;
+  vertical-align: middle;
+  justify-content: center; 
+  flex-direction: column;
+}
+#form{
+-ms-flex-item-align: center;
+
+}
+#Background{
+  height: 100vh;
+ background-position: fixed;
+ background-repeat: no-repeat, repeat;
+   background: url(${this.imgUrl}) no-repeat center fixed; 
+  background-size: cover;
+
+
+}
