@@ -15,42 +15,42 @@
 <body>
 	<div id="Image"></div>
 
-	<section class="container-fluid mx-2">
-		<div class="row align-content-center my-2">
-			<div class="col-12">
-				<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-					<h1>Get Ready to Live!</h1>
+	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+		<a href="#" class="navbar-brand">Get ready to live!</a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navLinks">
 
-
-
-					<!-- <div class="container-fluid"> -->
-					<!-- <div class="row align-content-center my-2">
-			<div class="col-12"> -->
-					<div class="col-3 align-items:center;">
-						<div id="current-weather">
-							Your Weather Template
-						</div>
-					</div>
-
-
-					<div id="quote">
-						The Quote
-					</div>
-
-
-
-
-					<div class="col-12d-flex flex-column justify-content-center align-items-center">
-						A Todo List
-						<div id="todo-error"></div>
-
-
-						<form id="FORM" class="form-inline align-content-center my-2" onsubmit="app.controllers.todoController.addTodo(event)">
-							<input type="text" name="description">
-						</form>
-						<div id="todos"></div>
-					</div>
+		</div>
+	</nav>
+	<section class="container-fluid px-0">
+		<div class="row align-items-center">
+			<div id="REMINDERS" class="col-12d-flex flex-column justify-content-center align-items-center">
+				<p class="word-reminder"> Reminders</p>
+				<div id="todo-error"></div>
+				<form id="FORM" class="form-inline align-content-center my-2" onsubmit="app.controllers.todoController.addTodo(event)">
+					<input type="text" name="description">
+				</form>
+				<div id="todos"></div>
 			</div>
+
+			<div id="current-weather">
+				Your Weather Template
+			</div>
+
+
+
+			<div id="quote">
+				The Quote
+			</div>
+		</div>
+
+
+
+
+		</div>
+
 		</div>
 		</nav>
 

@@ -6,7 +6,7 @@ function _drawTodos() {
 	let template = ''
 	let todos = _todoService.Todos
 	todos.forEach(t => {
-		let button = `<button class="btn btn-primary" onclick="app.controllers.todoController.removeTodo('${t.id}')">DONE</button>`
+		let button = `<button class="btn btn-primary" onclick="app.controllers.todoController.removeTodo('${t.id}')">complete</button>`
 		template += t.getCard(button)
 	})
 	document.querySelector('#todos').innerHTML = template

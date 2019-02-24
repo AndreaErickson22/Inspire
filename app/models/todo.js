@@ -11,12 +11,10 @@ export default class Todo {
 
   getCard(button) {
     return `
-        <div class="col-12 align-items-center align-items: baseline; justify-content-center">
-        <div id="TODO-CARDS" class="card w-75">
+        <div id="TODO-CARDS" class="col-12 align-items-center align-items: baseline; justify-content-center">
+        <div class="card w-100">
                 <div class="card-body TO-DO">
-              <h5 class="card-title">To Do List</h5>
-                    <h5 class="card-title">${this.description}</h5>
-                    <p class="card-text">${this.user}</p>
+             <h5 class="card-title">${this.description}</h5>
                     ${button}
                 </div>
               
