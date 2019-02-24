@@ -10,6 +10,8 @@ function _drawTodos() {
 		template += t.getCard(button)
 	})
 	document.querySelector('#todos').innerHTML = template
+	document.querySelector('#count').innerHTML = " " + todos.length
+
 	//WHAT IS MY PURPSE?
 	//do this
 }
