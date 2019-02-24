@@ -1,13 +1,15 @@
 export default class Image {
   constructor(data) {
     this.id = data.id
-    this.imgUrl = data.imgUrl
+    this.img = data.url
+    this.location = data.site
 
   }
   getTemplate() {
-    `
-  <div id="Image">
-    <img src="${this.imgUrl}" alt="">
-	</div>`
+    return `
+   
+  
+    <img id="Image" src="${this.img}" alt="">
+  `
   }
 }

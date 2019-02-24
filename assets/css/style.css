@@ -1,42 +1,79 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  margin:0;
+  
+ 
+}
+
+#Image {
+   height: 100%;
+  width: 100%;
+ background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background: center;
+  background-position: fixed;
+  
+}
+
+#mainNavbar{
+height: 100px;
+width: 100%;
+background-color: black;
+}
+h1{
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    text-decoration-skip-ink: 1px;
+}
+
 #todo-error{
   color: red;
   font-size: 2em;
 }
-
+.WEATHER{
+  background-color: rgb(242, 239, 234);
+  border: 4px solid black;
+}
 .current-weather{
+  border-radius: 5%;
   justify-self: end;
   float: right;
   align-items: flex-end;
-  background-color: rgb(43, 198, 226);
+  background-color: rgba(244, 245, 245, 0);
   flex-wrap: wrap-reverse;
+  font-family: 'Exo 2', sans-serif;
 }
-.TO-DO{
+/* .TO-DO{
   background-color: rgba(22, 176, 223, 0.783);
-  border: 2px solid black;
+  border: 2px solid rgb(25, 176, 231);
 font-size: 12px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display: inline-block;
   vertical-align: middle;
    justify-content: center; 
   flex-direction: column;
-}
+  font-family: 'Exo 2', sans-serif;
+} */
 .ToDo-List{
   align-content: center;
    display: inline-block;
   vertical-align: middle;
   justify-content: center; 
   flex-direction: column;
+  font-family: 'Exo 2', sans-serif;
+}
+#TODO-CARDS{
+    background-color: rgba(22, 176, 223, 0.783);
+  border: 2px solid rgb(25, 176, 231);
+font-size: 12px;
+ font-family: 'Exo 2', sans-serif;
 }
 #form{
 -ms-flex-item-align: center;
+font-family: 'Exo 2', sans-serif;
 
 }
-#Background{
-  height: 100vh;
- background-position: fixed;
- background-repeat: no-repeat, repeat;
-   background: url(${this.imgUrl}) no-repeat center fixed; 
-  background-size: cover;
-
-
+#FORM{
+  padding-top: 100px;
+  align-items: baseline;
 }

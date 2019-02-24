@@ -6,41 +6,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Inspire</title>
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:800" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body id="Background">
+<body>
 	<div id="Image"></div>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-3 float-right weather"></div>
-			<div id="current-weather">
-				Your Weather Template
+	<section class="container-fluid mx-2">
+		<div class="row align-content-center my-2">
+			<div class="col-12">
+				<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+					<h1>Get Ready to Live!</h1>
+
+
+
+					<!-- <div class="container-fluid"> -->
+					<!-- <div class="row align-content-center my-2">
+			<div class="col-12"> -->
+					<div class="col-3 align-items:center;">
+						<div id="current-weather">
+							Your Weather Template
+						</div>
+					</div>
+
+
+					<div id="quote">
+						The Quote
+					</div>
+
+
+
+
+					<div class="col-12d-flex flex-column justify-content-center align-items-center">
+						A Todo List
+						<div id="todo-error"></div>
+
+
+						<form id="FORM" class="form-inline align-content-center my-2" onsubmit="app.controllers.todoController.addTodo(event)">
+							<input type="text" name="description">
+						</form>
+						<div id="todos"></div>
+					</div>
 			</div>
 		</div>
+		</nav>
 
-
-		<div id="quote">
-			The Quote
-		</div>
-
-		<div>
-			<div class="row">
-				<div class="col-12 d-flex flex-column justify-content-center align-items-center"></div>
-				A Todo List
-				<div id="todo-error"></div>
-
-
-				<form class="FORM" onsubmit="app.controllers.todoController.addTodo(event)">
-					<input type="text" name="description">
-				</form>
-				<div id="todos"></div>
-			</div>
-		</div>
-	</div>
+	</section>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script type="module" src="app/main.js"></script>

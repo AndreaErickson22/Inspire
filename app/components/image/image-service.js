@@ -1,13 +1,14 @@
 // @ts-ignore
+import Image from "../../models/image.js"
 let _imgApi = axios.create({
-	baseURL: 'https://bcw-sandbox.herokuapp.com/api/images',
+	baseURL: '//bcw-sandbox.herokuapp.com/api/images',
 	timeout: 3000
-});
+})
 let _state = {
-	apiImages: ''
+	apiImage: []
 }
 let _subscribers = {
-	apiImages: []
+	apiImage: []
 }
 function setState(prop, data) {
 	_state[prop] = data
@@ -18,13 +19,17 @@ export default class ImageService {
 	addSubscriber(prop, fn) {
 		_subscribers[prop].push(fn)
 	}
-	getImage() {
-		return _state.apiImages
+	get Image() {
+		return _state.apiImage
 	}
 	getImageData() {
 		_imgApi.get()
 			.then(res => {
-				setState('image', res.data.url)
+				let data = new Image(res.data)
+				setState('apiImage', data)
+			})
+			.catch(err => {
+				console.error(err)
 			})
 	}
 }

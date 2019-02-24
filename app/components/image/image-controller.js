@@ -1,17 +1,20 @@
-import ImageService from "./image-service.js";
+import ImageService from "../../components/image/image-service.js";
+let _imageService = new ImageService()
 
-const _is = new ImageService()
 function drawImage() {
-  let image = _is.getImageData
+  let template = ''
+  let image = _imageService.Image
+  template = image.getTemplate()
+  console.log(template)
 
-  document.querySelector('#Background').innerHTML = template
+  document.querySelector('#Image').innerHTML = template;
 }
 // function logImages() {
 //   console.log("images UPDATed")
 export default class ImageController {
   constructor() {
-    _is.addSubscriber('image', drawImage)
-    _is.getImageData()
+    _imageService.addSubscriber('apiImage', drawImage)
+    _imageService.getImageData()
   }
 
 }
