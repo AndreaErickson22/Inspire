@@ -128,19 +128,14 @@ font-family: 'Exo 2', sans-serif;
 }
 #Quote{
   align-items: flex-end;
-
-margin-top: 240px;
+margin-top: 420px;
 }
 #current-quote{
-  /* padding-top: 20px;
-  padding-bottom: 20px; */
    text-align: center;
-   /* border: solid 1px black; */
   background-color: rgba(0, 0, 0, 0.55);
-
   -ms-flex-item-align: center;
-font-family: 'Cuprum', sans-serif;
 
+font-family: 'Cuprum', sans-serif;
   color:rgb(255, 255, 255);
 }
 p{
