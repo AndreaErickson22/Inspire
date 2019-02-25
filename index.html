@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Inspire</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:800" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	 crossorigin="anonymous">
@@ -17,7 +18,7 @@
 <body id="bg-image" class="container-fluid px-0" background="">
 
 	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-		<a href="#" class="navbar-brand">Get ready to live!</a>
+		<a href="#" class="navbar-brand">Get ready to live Andrea!</a>
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -25,29 +26,30 @@
 
 		</div>
 	</nav>
-	<!-- <section class="container-fluid px-0"></section> -->
-	<div class="row align-items-center">
-		<div id="REMINDERS" class="col-12d-flex flex-column justify-content-center align-items-center">
-			<p class="word-reminder">Reminders<span id="count"></span></p>
-			<div id="todo-error"></div>
-			<form id="FORM" class="form-inline align-content-center my-2" onsubmit="app.controllers.todoController.addTodo(event)">
-				<input type="text" name="description">
-			</form>
-			<div id="todos"></div>
-		</div>
-	</div>
-	<div class="row align-items-center">
-		<div id="REMINDERS" class="col-12d-flex flex-column justify-content-center align-items-center">
-			<div id="current-weather">
+	<section class="container-fluid px-0">
+		<div class="row align-items-center">
 
+			<div id="REMINDERS" class="col-4 flex-column justify-content-center">
+				<h3 class="word-reminder">Reminders<span id="count"></span></h3>
+				<div id="todo-error"></div>
+				<form id="FORM" class="form-inline align-content-center my-2" onsubmit="app.controllers.todoController.addTodo(event)">
+					<input type="text" name="description">
+				</form>
+				<div id="todos"></div>
 			</div>
+		</div>
 
+
+		<div id="current-weather">
+
+		</div>
+		<div id="Quote" class="col-12 flex-column justify-content-center align-items-flex-end">
 			<div id="current-quote">
 				<div id="Quote-Day"></div>
 				The Quote
 			</div>
 		</div>
-	</div>
+
 	</section>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>

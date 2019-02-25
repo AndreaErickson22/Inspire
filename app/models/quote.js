@@ -8,10 +8,10 @@ export default class Quote {
   getTemplate() {
     return `
     <div id="current-quote" class="card">
-  <div class="card-header">
- <p class="card-text">${this.tags}</p>
+  <div class="quote-card-header">
+ <h2 id="TAG" class="card-text">${this.tags}</h2>
   </div>
-  <div class="card-body">
+  <div class="quote-card-body">
     <p class="card-text">${this.body}</p>
     <p class="card-text">${this.author}</p>
 </div>

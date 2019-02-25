@@ -6,8 +6,8 @@ import QuoteController from "./components/quote/quote-controller.js";
 class App {
   constructor() {
     this.controllers = {
-      // weatherController: new WeatherController(),
-      // todoController: new TodoController(),
+      weatherController: new WeatherController(),
+      todoController: new TodoController(),
       imageController: new ImageController(),
       quoteController: new QuoteController(),
     }

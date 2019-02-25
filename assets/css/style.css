@@ -10,21 +10,47 @@
 #mainNavbar{
 height: 100px;
 width: 100%;
-background-color: black;
+background-color: rgba(0, 0, 0, 0.75);
  font-size: 2.5rem;
   font-weight: 100;
   font-family: 'Exo 2', sans-serif;
 }
 h1{
-    font-family: 'Exo 2', sans-serif;
-    color: rgb(0, 0, 0);
+    font-family: 'Cuprum', sans-serif;
+    color: white;
     
 }
-p{
+h2{
+  font-size: 45px;
+   font-family: 'Cuprum', sans-serif;
+    color:white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+input{
+  margin-left: -22px;
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
+.btn-primary {
+background-color: black;
+border-color: black;
+padding-top: 0;
+padding-bottom: 0;
+margin-left: 20px;
+
+}
+h3{
   font-size: 40px;
-    font-family: 'Exo 2', sans-serif;
-    color: rgb(0, 0, 0);
-  padding-left:5px;
+  font-style: bold;
+  font-family: 'Cuprum', sans-serif;
+    color: white;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+h5{
+  margin-left: 20px;
 }
 
 #todo-error{
@@ -33,15 +59,16 @@ p{
 }
 
 #current-weather {
+  text-align: center;
   border-radius: 5%;
   justify-self: end;
   float: right;
-  background-color: rgb(244, 245, 245);
+  background-color: rgba(0, 0, 0, 0.75);
   flex-wrap: wrap-reverse;
-  font-family: 'Exo 2', sans-serif;
-   /* margin-top: -700px; */
-   color: black;
-   margin-left:20px;
+ font-family: 'Cuprum', sans-serif;
+   margin-top: -250px;
+   color:white;
+   /* margin-left:20px; */
   
   
 }
@@ -55,11 +82,11 @@ p{
   font-family: 'Exo 2', sans-serif;
 } */
 #TODO-CARDS{
-    background-color: rgb(25, 176, 231);
-  border: 2px solid rgb(25, 176, 231);
+    /* background-color:black;
+  border: 2px solid rgb(25, 176, 231); */
 font-size: 12px;
- font-family: 'Exo 2', sans-serif;
- margin: 3px;
+font-family: 'Cuprum', sans-serif;
+ margin: 6px;
  
 }
 #todo-error{
@@ -70,6 +97,11 @@ font-size: 12px;
 font-family: 'Exo 2', sans-serif;
 
 }
+.TO-DO{
+  padding:.25rem;
+  /* margin-bottom: 5px;
+  margin-top: 5px; */
+}
 #FORM{
   padding-top: 200px;
   padding-left:42px;
@@ -78,14 +110,14 @@ font-family: 'Exo 2', sans-serif;
 #REMINDERS {
   overflow-y: scroll;
   border: solid 1px black;
-  background-color: white;
-  height: 800px;
-  width: 300px;
-  /* margin-top:-1300px; */
-  
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 500px;
+  width: 250px;
+ margin-top: 120px;
   align-content: center;
   justify-content: center; 
  margin-left:40px;
+
   
 }
 .word-reminder{
@@ -94,14 +126,31 @@ font-family: 'Exo 2', sans-serif;
 .navbar-brand{
   font-size: 45px;
 }
-#current-quote{
-   border: solid 1px black;
-  background-color: white;
-  height: 350px;
-  width: 800px;
- 
+#Quote{
+  align-items: flex-end;
 
-  color:white;
-  /* margin-top: -1300; */
-
+margin-top: 240px;
 }
+#current-quote{
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+   text-align: center;
+   /* border: solid 1px black; */
+  background-color: rgba(0, 0, 0, 0.55);
+
+  -ms-flex-item-align: center;
+font-family: 'Cuprum', sans-serif;
+
+  color:rgb(255, 255, 255);
+}
+p{
+   font-size: 30px;
+    font-family: 'Cuprum', sans-serif;
+    color:white;
+  padding-left:5px; 
+  padding-right: 5px;
+  padding-bottom:10px; 
+
+  font-kerning: 10px;
+}
+
