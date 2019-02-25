@@ -109,7 +109,7 @@ font-family: 'Exo 2', sans-serif;
 }
 #REMINDERS {
   overflow-y: scroll;
-  border: solid 1px black;
+border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.75);
   height: 500px;
   width: 250px;
@@ -131,6 +131,7 @@ font-family: 'Exo 2', sans-serif;
 margin-top: 420px;
 }
 #current-quote{
+  border-radius: 5px;
    text-align: center;
   background-color: rgba(0, 0, 0, 0.55);
   -ms-flex-item-align: center;
