@@ -5,7 +5,7 @@ let _imgApi = axios.create({
 	timeout: 3000
 })
 let _state = {
-	apiImage: []
+	apiImage: {}
 }
 let _subscribers = {
 	apiImage: []
@@ -27,9 +27,6 @@ export default class ImageService {
 			.then(res => {
 				let data = new Image(res.data)
 				setState('apiImage', data)
-			})
-			.catch(err => {
-				console.error(err)
 			})
 	}
 }

@@ -12,8 +12,9 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-	<div id="Image"></div>
+<!-- <body id="Image"> -->
+
+<body id="bg-image" class="container-fluid px-0" background="">
 
 	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
 		<a href="#" class="navbar-brand">Get ready to live!</a>
@@ -24,36 +25,29 @@
 
 		</div>
 	</nav>
-	<section class="container-fluid px-0">
-		<div class="row align-items-center">
-			<div id="REMINDERS" class="col-12d-flex flex-column justify-content-center align-items-center">
-				<p class="word-reminder">Reminders<span id="count"></span></p>
-				<div id="todo-error"></div>
-				<form id="FORM" class="form-inline align-content-center my-2" onsubmit="app.controllers.todoController.addTodo(event)">
-					<input type="text" name="description">
-				</form>
-				<div id="todos"></div>
-			</div>
-
+	<!-- <section class="container-fluid px-0"></section> -->
+	<div class="row align-items-center">
+		<div id="REMINDERS" class="col-12d-flex flex-column justify-content-center align-items-center">
+			<p class="word-reminder">Reminders<span id="count"></span></p>
+			<div id="todo-error"></div>
+			<form id="FORM" class="form-inline align-content-center my-2" onsubmit="app.controllers.todoController.addTodo(event)">
+				<input type="text" name="description">
+			</form>
+			<div id="todos"></div>
+		</div>
+	</div>
+	<div class="row align-items-center">
+		<div id="REMINDERS" class="col-12d-flex flex-column justify-content-center align-items-center">
 			<div id="current-weather">
 
 			</div>
 
-
-
-			<div id="quote">
+			<div id="current-quote">
+				<div id="Quote-Day"></div>
 				The Quote
 			</div>
 		</div>
-
-
-
-
-		</div>
-
-		</div>
-		</nav>
-
+	</div>
 	</section>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>

@@ -2,12 +2,9 @@ import ImageService from "../../components/image/image-service.js";
 let _imageService = new ImageService()
 
 function drawImage() {
-  let template = ''
   let image = _imageService.Image
-  template = image.getTemplate()
-  console.log(template)
 
-  document.querySelector('#Image').innerHTML = template;
+  document.getElementById('bg-image').setAttribute('background', image.getTemplate());
 }
 // function logImages() {
 //   console.log("images UPDATed")
