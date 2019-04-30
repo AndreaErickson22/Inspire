@@ -6,12 +6,12 @@ export default class Weather {
 
   getTemplate() {
     return `
-    <div id="current-weather" class="card">
+    <div id="current-weather" class="card justify-content-center">
     <div class="card-body current-weather"> 
   <div class="weather-template">
-  <h5>Current Weather</h5>
+  <h5 class="pt-3">Current Weather</h5>
     <h1 class="this-city">${this.city}</h1>
-    <h1 class="this-temp">${this.farenheit}</h1>
+    <h1 class="this-temp">${this.farenheit}°</h1>
  </div>
   </div>
      </div>
